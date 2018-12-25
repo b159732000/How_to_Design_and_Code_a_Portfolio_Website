@@ -1,0 +1,286 @@
+/*==================================================
+
+    1. Global
+    2. Nav
+    3. Landing
+    4. Skills
+    5. Work
+        5.0 - Work 01
+        5.1 - Work 02
+        5.2 - Work 01 and 02
+    6. Footer
+
+================================================= */
+
+
+/* ===== 1. Global ============================== */
+
+* {
+    box-sizing: border-box;
+    font-family: Asap, Jua, 'sans-serif';
+    text-decoration: none;
+}
+
+clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    max-width: 80%;
+    margin: auto;
+    background-image: url(../img/BG.png);
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #1B1B1B;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.blue {
+    color: #3589e0;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #92999E;
+}
+
+a {
+    text-decoration: none;
+    color: #4389BD;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #4389BD;
+}
+
+/* ===== 2. Nav ================================= */
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.contactMe, .navItem {
+    flex: 1;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.contactMe a:hover {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.navItem {
+    text-align: right;
+}
+
+.nav i {
+    margin: 5px;
+}
+
+.navItem i {
+    color: #999B9E;
+}
+
+/* ===== 3 Landing ============================== */
+
+.landing {
+    height: 100vh;
+    position: relative;
+}
+
+.landingWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.landing ul {
+    font-size: 18px;
+    font-weight: 500;
+    color: #92999E;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.landing ul li {
+    margin-top: 20px;
+}
+
+.landingR img {
+    width: 200px;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 180px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+/* ===== 4. Skills ============================== */
+
+.skills {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20em;
+}
+
+.skills h2 {
+    text-align: center;
+}
+
+.skills p {
+    text-align: center;
+    font-weight: 500;
+    color: #c1c3c7
+}
+
+.skills img {
+    width: 40px;
+    margin: 0px 15px;
+}
+
+/* ===== 5.0 Work 01 ============================ */
+.work {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20em;
+}
+
+.work .workText {
+    position: absolute;
+    top: 85px;
+}
+
+.work h3 {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.work ul {
+    list-style-type: none;
+    padding-left: 0;
+    position: absolute;
+    bottom: 0px;
+    right: 76%;
+    font-size: 20px;
+}
+
+.work ul li {
+    margin-top: 6px;
+}
+
+.work .underline {
+    display: block;
+    width: 40px;
+/*    border-bottom: 1px solid #4389BD;*/
+    border-radius: 2px;
+    background-color: #4389BD;
+    width: 61px;
+    height: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.work .workImg {
+    width: 75%;
+    float: right;
+    box-shadow: 0px 3px 7px 0px rgba(23,30,36,0.06);
+}
+
+
+
+/* ===== 5.1 Work 02 ============================ */
+.work2 {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20em;
+}
+
+.work2 .workText {
+    position: absolute;
+    top: 85px;
+    right: 0;
+}
+
+.work2 h3 {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: right;
+}
+
+.work2 ul {
+    list-style-type: none;
+    padding-left: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 76%;
+    font-size: 20px;
+}
+
+.work2 ul li {
+    margin-top: 6px;
+}
+
+.work2 .underline {
+    display: block;
+    width: 40px;
+/*    border-bottom: 1px solid #4389BD;*/
+    background-color: #4389BD;
+    width: 61px;
+    height: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    float: right;
+    border-radius: 2px;
+}
+
+.work2 .workImg {
+    width: 75%;
+    float: left;
+    box-shadow: 0px 3px 7px 0px rgba(23,30,36,0.06);
+}
+
+/* ===== 5.3 Work 01 and 02 ===================== */
+
+
+/* ===== 6. Footer ============================== */
+.footer {
+    background-image: url(../img/Dribbble_Blue_Large.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    -webkit-background-size: 320px;
+    background-size: 320px;
+    text-align: center;
+    padding-bottom: 7em;
+}
+
+.underlineSmall {
+    display: block;
+    background-color: #4389BD;
+    width: 70px;
+    height: 3px;
+    border-radius: 2px;
+    text-align: center;
+    margin: auto;
+}
